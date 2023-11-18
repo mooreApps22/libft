@@ -17,3 +17,9 @@ Make sure you include "libft.h" at the top of your main.c
 You can now use all the libft custom library functions inside your program.
 When you are ready to compile your main.c use the command: cc -Wall -Wextra -Werror -L. -lft main.c (include the flag -o if you want to name your executable)
 Then when you are ready to execute you program use the command: ./a.out 
+
+Makefile rules:
+make re : will recompile the the libft.a file if you've made any changes to the .c files.
+make clean: will remove the .o files
+make fclean: will remove the .o files and remove the libft.a file
+make bonus: will compile a libft.a file with just the nine linked list files. 
