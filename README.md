@@ -17,4 +17,8 @@ Additionally, the libft.h file must be present. All files in your program that u
 
 ### Linking
 
-Furthermore, you might decide to move your .h and/or .a file to another directory. In that case, you would include the pathway in the include statement. Ex: ```#include "include/libft.h"```. You also have to include an include flag in your command line. ```cc hello_world.c libft.a -I./include```
+Furthermore, you might decide to move your .h and/or .a file to another directory. In that case, you would include the pathway in the include statement. Ex: ```#include "include/libft.h"```. You also have to add an include flag in your command line. Ex: ```cc hello_world.c libft.a -I./include``` This will link the header to your program.
+
+Also, you can move your libft.a to another directory. In that case you would have to include the pathway of the libft.a file in the command line. ```cc hello_world.c include/libft.a -I./include```
+
+You can decide to only include the .h and .a files in future programs or include the entire libft program. It can be useful to look at the source code of the different source files and adjust them as needed. 
